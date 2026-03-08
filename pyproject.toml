@@ -1,0 +1,22 @@
+[project]
+name = "llm-tools-filesystem-toolbox"
+version = "0.1"
+description = "a toolbox for `llm` that affords filesystem operations, such as reading and writing files"
+readme = "README.md"
+authors = [{name = ""}]
+license = "Apache-2.0"
+classifiers = []
+requires-python = ">=3.9"
+dependencies = [
+    "llm>=0.26"
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project.entry-points.llm]
+llm_tools_filesystem_toolbox = "llm_tools_filesystem_toolbox"
+
+[project.optional-dependencies]
+test = ["pytest", "llm-echo>=0.3a1"]
