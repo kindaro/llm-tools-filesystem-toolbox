@@ -5,22 +5,6 @@ import os
 class ReadFiles (llm.Toolbox):
     def __init__(self): pass
 
-    def get_working_folder(self) -> str:
-        """
-        This function will get the current working folder. It does not accept any
-        arguments. You should pass it an empty dictionary.
-
-        Parameters: none
-
-        Returns:
-        - str: the working folder
-
-        Example:
-            call: get_working_folder({})
-            result: "/home/user"
-        """
-        return os.getcwd()
-
     def list_folder(self, target_folder: str) -> list[str]:
         """
         This function will return the list of files and folders in the folder
